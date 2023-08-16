@@ -1,0 +1,84 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f2f4f6, #a6c0fe);
+    text-align: center;
+    margin-top: 50px;
+    height: 100vh;
+    padding-top: 80px; /* Added padding to avoid title overlapping with container */
+    display: flex;
+    flex-direction: column; /* Changed to column for better centering */
+    align-items: center;
+    justify-content: start; /* Start the container from the top */
+}
+
+.container {
+    padding: 30px;
+    background-color: linear-gradient(to right, #f2f4f6, #a6c0fe);
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 700px;
+}
+
+.number-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #f8c291;  /* Peach color for the buttons */
+    border: none;  /* No border */
+    transition: transform 0.1s; /* Transition for a press effect */
+}
+.number-btn:active {
+    transform: scale(0.95);  /* Press effect when button is clicked */
+}
+
+.number-btn:hover {
+    background-color: #7189da;
+    transform: scale(1.1);
+}
+
+#guesses {
+    font-size: 24px;
+    margin-top: 20px;
+}
+.feedback-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: lightgray;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* This will center the content (number) inside the circle */
+    font-size: 20px;
+}
+
+.indicator {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+}
+.title {
+    font-family: 'Pacifico', cursive;  /* Bubbly font */
+    font-size: 3.5em;  /* Made it slightly bigger */
+    color: orange;   /* Using the Peach color to maintain the theme */
+    margin-bottom: 50px;  /* Increased space for aesthetic reasons */
+    position: absolute; /* Absolute position */
+    top: 10px; /* Move it to the top with some space */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Offset for perfect centering */
+}
